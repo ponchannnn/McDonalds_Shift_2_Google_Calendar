@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Crew Room to Google Calendar",
+    "version": "1.0",
+    "permissions": ["storage", "identity", "scripting", "activeTab"],
+    "host_permissions": ["https://calendar.googleapis.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://mcdcrew.jp/MyPage/schedule/setting/edit/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "oauth2": {
+    "client_id": "__CLIENT_ID__",
+    "scopes":["https://www.googleapis.com/auth/calendar.events"]
+  }
+}
