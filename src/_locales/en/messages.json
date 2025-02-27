@@ -1,0 +1,35 @@
+{
+  "appName": {
+    "message": "Crew Room Sync"
+  },
+  "userInfo": {
+    "message": "Logged in as: "
+  },
+  "changeUser": {
+    "message": "Change User"
+  },
+  "fetch": {
+    "message": "Fetch"
+  },
+  "options": {
+    "message": "Options"
+  },
+  "add": {
+    "message": "Add"
+  },
+  "adding": {
+    "message": "Adding..."
+  },
+  "added": {
+    "message": "Added"
+  },
+  "retry": {
+    "message": "Retry"
+  },
+  "addAll": {
+    "message": "Add All"
+  },
+  "invalidUrlPattern": {
+    "message": "This extension only works on the specified URL pattern."
+  }
+}

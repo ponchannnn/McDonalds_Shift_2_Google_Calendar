@@ -1,0 +1,53 @@
+body {
+    width: 400px; /* 幅を設定 */
+    height: 600px; /* 高さを設定 */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+  }
+  
+  #userInfo {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  button, a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  button:hover, a:hover {
+    background-color: #45a049;
+  }
+  
+  .shift {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .shift button {
+    margin-left: 10px;
+  }
+  
+  #shiftsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

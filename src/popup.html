@@ -2,20 +2,16 @@
 <html>
 <head>
 <meta charset="UTF-8" />
-  <title>Crew Room Sync</title>
-  <style>
-    .shift {
-      margin-bottom: 10px;
-    }
-    .shift button {
-      margin-left: 10px;
-    }
-  </style>
+  <title><span class="i18n" data-i18n="appName"></span></title>
+  <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-  <button id="sync">Googleカレンダーに追加</button>
-  <button id="fetch">取得</button>
+  <div id="userInfo"></div> <!-- ユーザー情報を表示する要素 -->
+  <button id="changeUser" class="i18n" data-i18n="changeUser"></button> <!-- ユーザー変更ボタン -->
+  <button id="fetch" class="i18n" data-i18n="fetch"></button>
+  <a href="options.html" target="_blank" class="i18n" data-i18n="options">Options</a> <!-- オプションページへのリンク -->
   <div id="shiftsContainer"></div>
   <script type="text/javascript" src="popup.js"></script>
+  <script type="text/javascript" src="i18n.js"></script>
 </body>
 </html>

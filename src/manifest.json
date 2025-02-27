@@ -1,23 +1,29 @@
 {
-    "manifest_version": 3,
-    "name": "Crew Room to Google Calendar",
-    "version": "1.0",
-    "permissions": ["storage", "identity", "scripting", "activeTab"],
-    "host_permissions": ["https://calendar.googleapis.com/*"],
-    "background": {
-      "service_worker": "background.js"
-    },
-    "content_scripts": [
-      {
-        "matches": ["https://mcdcrew.jp/MyPage/schedule/setting/edit/*"],
-        "js": ["content.js"]
-      }
-    ],
-    "action": {
-      "default_popup": "popup.html"
-    },
-    "oauth2": {
-    "client_id": "__CLIENT_ID__",
-    "scopes":["https://www.googleapis.com/auth/calendar.events"]
-  }
+  "manifest_version": 3,
+  "name": "Crew Room to Google Calendar",
+  "key" : "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtkN9fb6Btpkod/ET85iX9SEb0CFxgWxb8JUzwC6RMJMQm6R7m5hmYerdepySBlxod6J2XzuTXiyPkGn+ZYQw4YHh4SPTaJNqt3qa42zp9Y1qXFDCokfl6b2xh2RH5H4+Vemo3njdFpp2yD8PDcVimGW4IAyK2gqGslGplPcXnIo3PJHOpyAWOHmo5cJNgGrzc9td4HlTzihOnqMK/xftNGURwfgQUP2ROM/necK+YjlQl+8KVfC6BwohW7dPqUjVYFXaInYTnwkM7KDLNzs+Km4jKIF8KMtY46v4EHM81pOd+Wc/eDK6fzwuUM5KQBUa6jFMRDbmdp9vosEEx1ngtQIDAQAB",
+  "version": "1.0",
+  "permissions": ["storage", "identity", "activeTab"],
+  "host_permissions": ["https://calendar.googleapis.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://mcdcrew.jp/MyPage/schedule/setting/edit/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "oauth2": {
+  "client_id": "912908191637-7917lp572596sn2m9p29r5ukg44lup9b.apps.googleusercontent.com",
+  "scopes":[
+    "https://www.googleapis.com/auth/calendar.events",
+    "https://www.googleapis.com/auth/userinfo.profile"
+    ]
+  },
+  "default_locale": "en",
+  "options_page": "options.html"
 }

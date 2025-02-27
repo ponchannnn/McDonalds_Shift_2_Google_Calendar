@@ -1,0 +1,35 @@
+{
+  "appName": {
+    "message": "クルールーム同期"
+  },
+  "userInfo": {
+    "message": "ログイン中: "
+  },
+  "changeUser": {
+    "message": "ユーザー変更"
+  },
+  "fetch": {
+    "message": "取得"
+  },
+  "options": {
+    "message": "オプション"
+  },
+  "add": {
+    "message": "追加"
+  },
+  "adding": {
+    "message": "追加中..."
+  },
+  "added": {
+    "message": "追加済み"
+  },
+  "retry": {
+    "message": "再追加"
+  },
+  "addAll": {
+    "message": "一括追加"
+  },
+  "invalidUrlPattern": {
+    "message": "この拡張機能は、指定されたURLパターンでのみ動作します。"
+  }
+}

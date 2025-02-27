@@ -3,3 +3,5 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     sendResponse({ html: document.documentElement.outerHTML });
   }
 });
+
+chrome.runtime.sendMessage({ action: "showPopup" });
