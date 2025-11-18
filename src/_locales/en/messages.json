@@ -1,20 +1,35 @@
 {
   "appName": {
-    "message": "Crew Room Sync"
+    "message": "Mcdonald's Crew Room Sync"
   },
   "userInfo": {
     "message": "Logged in as: "
   },
+  "noUserLoggedIn": {
+    "message": "Not Logged-in"
+  },
+  "notLoggedIn": {
+    "message": "Any logged-in account does not exist"
+  },
+  "optionName": {
+    "message": "Mcdonald's Shift to Google Calendar Options"
+  },
   "changeUser": {
     "message": "Change User"
   },
-  "fetch": {
-    "message": "Fetch"
+  "calendarTitleLabel": {
+    "message": "Calendar Title:"
+  },
+  "calendarColorLabel": {
+    "message": "Calendar Color:"
+  },
+  "settingsSaved": {
+    "message": "Settings saved"
   },
   "options": {
     "message": "Options"
   },
-  "add": {
+  "addToCalendarButtonText": {
     "message": "Add"
   },
   "adding": {
@@ -26,8 +41,20 @@
   "retry": {
     "message": "Retry"
   },
-  "addAll": {
+  "deleteFromCalendarButtonText": {
+    "message": "Delete"
+  },
+  "deleting": {
+    "message": "Deleting..."
+  },
+  "CalendarRegistrationFailed": {
+    "message": "Failed to register calendar"
+  },
+  "bulkAddButtonText": {
     "message": "Add All"
+  },
+  "allShiftsAdded": {
+    "message": "All shifts added"
   },
   "invalidUrlPattern": {
     "message": "This extension only works on the specified URL pattern."

@@ -1,20 +1,35 @@
 {
   "appName": {
-    "message": "クルールーム同期"
+    "message": "マクドナルドクルールーム同期"
   },
   "userInfo": {
     "message": "ログイン中: "
   },
+  "noUserLoggedIn": {
+    "message": "未ログイン"
+  },
+  "notLoggedIn": {
+    "message": "ログイン中のアカウントは存在しません"
+  },
+  "optionName": {
+    "message": "Mcdonald's Shiftオプション"
+  },
   "changeUser": {
     "message": "ユーザー変更"
   },
-  "fetch": {
-    "message": "取得"
+  "calendarTitleLabel": {
+    "message": "カレンダータイトル:"
+  },
+  "calendarColorLabel": {
+    "message": "カレンダー色:"
+  },
+  "settingsSaved": {
+    "message": "設定が保存されました"
   },
   "options": {
     "message": "オプション"
   },
-  "add": {
+  "addToCalendarButtonText": {
     "message": "追加"
   },
   "adding": {
@@ -26,8 +41,20 @@
   "retry": {
     "message": "再追加"
   },
-  "addAll": {
+  "deleteFromCalendarButtonText": {
+    "message": "削除"
+  },
+  "deleting": {
+    "message": "削除中..."
+  },
+  "CalendarRegistrationFailed": {
+    "message": "カレンダー登録に失敗しました"
+  },
+  "bulkAddButtonText": {
     "message": "一括追加"
+  },
+  "bulkAddResultFormat": {
+    "message": "すべてのシフトが追加されました"
   },
   "invalidUrlPattern": {
     "message": "この拡張機能は、指定されたURLパターンでのみ動作します。"
