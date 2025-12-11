@@ -53,7 +53,7 @@
   "bulkAddButtonText": {
     "message": "一括追加"
   },
-  "bulkAddResultFormat": {
+  "allShiftsAdded": {
     "message": "すべてのシフトが追加されました"
   },
   "invalidUrlPattern": {

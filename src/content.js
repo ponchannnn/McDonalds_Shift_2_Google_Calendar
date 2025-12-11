@@ -1,12 +1,14 @@
 window.onload = function() {
-  const year = getYearFromUrl() || new Date().getFullYear().toString();
+  let currentYear = parseInt(getYearFromUrl() || new Date().getFullYear().toString(), 10);
 
   // background から保存済みシフト一覧を取得
   chrome.runtime.sendMessage({ action: "getStoredShifts" }, (storedShiftsMap) => {
     const storedShifts = storedShiftsMap || {};
     const shiftButtons = new Map();
-    
+
     const rows = document.querySelectorAll('table tbody tr');
+
+    let previousMonth = -1;
 
     rows.forEach(row => {
       const dateCell = row.cells[0];
@@ -15,8 +17,18 @@ window.onload = function() {
       const dateTextRaw = dateCell.textContent.trim();
       const dateMatch = dateTextRaw.match(/(\d{1,2})\/(\d{1,2})/);
       if (!dateMatch) return;
+
+      const month = parseInt(dateMatch[1], 10);
+      const day = parseInt(dateMatch[2], 10);
+
+      // 今12月で、前の行の月より小さい場合、年を繰り上げ
+      if (previousMonth === 12 && month === 1) {
+        currentYear++;
+      }
+      previousMonth = month;
+
       // padStart(2, '0') で 11/1 -> 11/01 にする
-      const dateText = `${year}-${dateMatch[1].padStart(2, '0')}-${dateMatch[2].padStart(2, '0')}`;
+      const dateText = `${currentYear}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
 
       const isInputMode = row.querySelector('input[type="text"]') !== null;
 
